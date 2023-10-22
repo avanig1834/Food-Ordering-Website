@@ -1,0 +1,32 @@
+@media (max-width: 1000px){
+    /* body{
+        background-color: red;
+    } */
+
+
+/* navigation */
+#navbar{
+    flex-direction: column;
+}
+
+
+
+/* service section */
+#services{
+    flex-direction: column;
+}
+
+#home p{
+    flex-direction: row;
+}
+/* client section */
+#clients{
+    overflow: hidden;
+}
+
+
+/* utitlity section */
+
+
+
+}

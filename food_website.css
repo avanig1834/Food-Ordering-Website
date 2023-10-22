@@ -1,0 +1,303 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --navbar-height: 60px;
+}
+/* navbar css */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 2;
+    z-index: -1;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    font-family: 'Anton', sans-serif;
+font-family: 'Bad Script', cursive;
+font-family: 'Black Ops One', cursive;
+font-family: 'Borel', cursive;
+font-family: 'Bricolage Grotesque', sans-serif;
+font-family: 'Caveat', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Dela Gothic One', cursive;
+font-family: 'DM Serif Display', serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Moo Lah Lah', cursive;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Rubik Burned', cursive;
+font-family: 'Source Code Pro', monospace;
+}
+/* navbar content css */
+#navbar ul li a{
+    color: white;
+    display: block;
+    margin: 10px 10px;
+    padding: 3px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* home section css */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 300px;
+    height: 270px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    position: absolute;
+    background: url(food1.avif) no-repeat center center/cover;
+    content: "";
+    height: 50%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.69;
+}
+#home h1{
+    text-align: center;
+    color: black;
+}
+#home p{
+    text-align: center;
+    color: black;
+    font-size: 1.2rem;
+    font-family: 'Anton', sans-serif;
+font-family: 'Bad Script', cursive;
+font-family: 'Black Ops One', cursive;
+font-family: 'Borel', cursive;
+font-family: 'Bricolage Grotesque', sans-serif;
+font-family: 'Caveat', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Dela Gothic One', cursive;
+font-family: 'DM Serif Display', serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Moo Lah Lah', cursive;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Rubik Burned', cursive;
+}
+/* section container */
+#services{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+#services .box{
+    border: 2px solid black;
+    margin: 15px;
+    padding: 10px 34px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    box-shadow: 3px 5px 9px black;
+    font-family: 'Anton', sans-serif;
+font-family: 'Bad Script', cursive;
+font-family: 'Black Ops One', cursive;
+font-family: 'Borel', cursive;
+font-family: 'Bricolage Grotesque', sans-serif;
+font-family: 'Caveat', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Dela Gothic One', cursive;
+font-family: 'DM Serif Display', serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Moo Lah Lah', cursive;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Rubik Burned', cursive;
+}
+
+#services .box img{
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+
+#section .box p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* client section */
+#client-section{
+    position: relative;
+    height: 180px;
+}
+#client-section::before{
+    content: "";
+    background: url(food.avif);
+    opacity: 0.5;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    padding: 15px;
+    height: 70px;
+    border-radius: 30px;
+}
+
+
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(Contact\ us\ banner\ .7a073f8d0667605662b2.jpg) no-repeat center center/cover;
+    opacity: 0.5;
+    z-index: -1;
+
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+#contact-box input, textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 15px;
+    border: 1.5px solid black;
+    background-color: rgb(243, 231, 231);
+}
+
+#contact-box form{
+    width: 35%;  
+}
+
+#contact-box label{
+    font-size: 1.2rem;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 8px 20px;
+}
+/* utility section */
+.h-primary{
+    font-size: 2.5rem;
+    font-family: 'Anton', sans-serif;
+font-family: 'Bad Script', cursive;
+font-family: 'Black Ops One', cursive;
+font-family: 'Borel', cursive;
+font-family: 'Bricolage Grotesque', sans-serif;
+font-family: 'Dela Gothic One', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Moo Lah Lah', cursive;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Rubik Burned', cursive;
+}
+.h-secondary{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 5px;
+    font-size: 1.5rem;
+}
+.btn{
+    padding: 7px;
+    margin: 10px 10px;
+    width: 120px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 3px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Bad Script', cursive;
+    font-family: 'Black Ops One', cursive;
+    font-family: 'Borel', cursive;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Dela Gothic One', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Moo Lah Lah', cursive;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Rubik Burned', cursive;;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+.center{
+    text-align: center;
+}
+.temporary{
+    height: 70px;
+}
+@media(min-width: 700px) and (max-width: 1075px){
+    #home p{
+        width: 700px;
+    }
+}
+@media(min-width: 700px) and (max-width: 1075px){
+    #home h1{
+        width: 700px;
+    }
+}
+@media(min-width: 400px) and (max-width: 700px){
+    #home::before{
+        position: absolute;
+        background: url(food1.avif) no-repeat center center/cover;
+        content: "";
+        height: 62%;
+        width: 151%;
+    }
+    #home p{
+        width: 500px;
+        /* margin-right: 45px; */
+        align-items: center;
+    }
+    #home h1{
+        width: 500px;
+        /* margin-right: 45px; */
+    }
+    .center{
+        margin-left: 198px;
+        font-size: 2rem;
+    }
+    #navbar::before{
+        width: 201%;
+    }
+    #navbar ul li {
+        font-size: 1rem;
+        align-items: center;
+    }
+    #navbar ul li a {
+        margin: 0px 0px;
+        padding: 1px 10px;
+
+    }
+}
